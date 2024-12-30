@@ -1,3 +1,35 @@
-body {
-    
+*{
+    border: 1px solid #c2c2c2;
 }
+body {
+
+}
+
+header, main, section, footer{
+    padding: 1rem;
+}
+
+#wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header .logo{
+    max-width: 100px;
+    height: auto;
+}
+
+header .search{
+    margin-right: 3rem;
+}
+
