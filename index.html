@@ -6,28 +6,202 @@
     <title>WitFlix</title>
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></head>
 <body>
     <div id="wrap">
-         <header>
+         <header class="flex">
             <img src="./src/images/WitFlix.png" alt="WitFlix Logo" class="logo">
-            <nav>
+            <nav class="flex">
                 <a href="">Topic 1</a>
                 <a href="">Topic 2</a>
                 <a href="">Topic 3</a>
                 <a href="">Topic 4</a>
             </nav>
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <i class="fa-solid fa-bell"></i>
-                <img src="" alt="Profil resmi" class="profile">
+            <div class="right flex">
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+                <div class="profile flex">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="src/images/user.png" alt="Profil resmi" class="profile">
+                </div>
             </div>
          </header>
 
-         <main>Main</main>
-         <section>Section</section>
-         <footer>Footer</footer>
+         <main>
+            <div class="hero-content">
+                <h1>TITANIC</h1>
+                <div class="movie-info">
+                    <span class="user-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="rating-number">8.4</span>
+                    <span class="rating-source">IMDB</span>
+                    <span class="maturity-rating">16+</span>
+                    <span class="duration">2 h 20 min</span>
+                </div>
+                <p>A young aristocratic woman, Rose, falls in love with a poor artist, Jack, aboard the
+                    ill-fated R.M.S. Titanic. As the ship sails toward its tragic fate, the two struggle to overcome societal
+                    differences, class divisions, and the impending disaster, leading to a love story that transcends time and loss.
+                  </p>
+                <ul class="movie-details">
+                    <li><span class="label">Starring:</span> Leonardo DiCaprio, Kate Winslet</li>
+                    <li><span class="label">Genre:</span> Drama, Romance</li>
+                    <li><span class="label">Tags:</span> Romance, Tragedy, Historical</li>
+                </ul>
+                <span class="btn">
+                    <i class="fas fa-play"></i>
+                    <span class="play-text">Play Now</span>
+                </span>
+            </div>
+         </main>
+
+         <section>
+            <div class="suggestion-row">
+                <div class="s-header">
+                    <h2>Popular Movies</h2>
+                    <a href="">View Al</a>
+                </div>
+                <div class="suggestion-content" id="popular">
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="suggestion-row">
+                <div class="s-header">
+                    <h2>Recommended For You</h2>
+                    <a href="">View Al</a>
+                </div>
+                <div class="suggestion-content">
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="src/images/film-img.png" alt="">
+                        <div class="item-content">
+                            <h3>Movie Name</h3>
+                            <div class="detail">
+                                <span class="maturity-rating">16+</span>
+                                <span class="duration">2 h 20 min</span>
+                            </div>
+                            <div class="btn">Play Now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <footer>
+            <div class="footer-helps">
+              <div class="helps-nav">
+                <nav>
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Privacy-Policy</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Watch List</a>
+                </nav>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto nihil illo ut velit aliquid.
+                Expedita quaerat natus voluptate aut accusantium? Laudantium placeat modi repudiandae corrupti delectus
+                accusamus sit officia.</p>
+            </div>
+            <div class="footer-socials">
+              <p>Follow Us</p>
+              <div class="social-icons">
+                <img src="src/images/facebook-icon.png" alt="WitFlix Facebook Page" id="facebook-icon">
+                <img src="src/images/youtube-icon.png" alt="WitFlix Youtube Page">
+                <img src="src/images/twitter-icon.png" alt="WitFlix X Page">
+              </div>
+            </div>
+            <div class="apps">
+              <p>Apps</p>
+              <div class="apps-icons">
+                <img src="src/images/applestore.png" alt="WitFlix on AppStore">
+                <img src="src/images/googleplay.png" alt="WitFlix on GooglePlay">
+              </div>
+            </div>
+          </footer>
     </div>
 </body>
 </html> 

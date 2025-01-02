@@ -1,11 +1,14 @@
 *{
-    border: 1px solid #c2c2c2;
+    
 }
 body {
-
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-header, main, section, footer{
+main, footer{
     padding: 1rem;
 }
 
@@ -18,18 +21,278 @@ header, main, section, footer{
     row-gap: 2rem;
 }
 
-header {
+.flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+header {
     padding: 1rem;
 }
 
 header .logo{
-    max-width: 100px;
-    height: auto;
+    height: 30px;
 }
 
-header .search{
-    margin-right: 3rem;
+header nav{
+    gap: 1rem;
 }
+header nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .right{
+    gap: 1rem;
+}
+
+header .right .search{
+    position: relative;
+}
+
+header .right .search i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+header .right .profile{
+    gap: 1rem;
+}
+
+header .right .profile img {
+    max-width: 38px;
+    height: auto;
+    border-radius: 50%;
+}
+
+main{
+    background-image: url("/src/images/titanic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 5rem 3rem;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+ul.movie-details{
+    list-style-type: none;
+}
+
+.movie-details span{
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #FF0000;
+    color: #D9D9D9;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    align-self: flex-start; /* Flex konteyner içinde sola yaslan */
+    flex-grow: 0; /* Genişlemeyi engelle */
+}
+.suggestion-row{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.suggestion-row .s-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion-row h2{
+    font-size: 0.9rem;
+}
+
+.suggestion-row a{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.suggestion-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.suggestion-content .item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border: 2px solid #c2c2c2;
+    width: 23%;
+    background-color: darkgrey;
+    position: relative;
+}
+
+.suggestion-content .item img{
+    width: 100%;
+}
+
+.suggestion-content .item .item-content{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+/* Footer Bölümü */
+
+/* Genel footer ayarları */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 14px;
+
+}
+
+/* Footer Yardım ve Bilgi Alanı */
+.footer-helps {
+    width: 60%;
+    padding-right: 1rem;
+}
+
+.footer-helps nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-helps a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.2s;
+}
+
+.footer-helps a:hover {
+    color: #007bff;
+}
+
+.footer-helps p {
+    margin-top: 2vh;
+}
+
+/* Sosyal Medya ve İkonlar */
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-socials p {
+    margin-bottom: 1.2vh;
+    font-weight: bold;
+}
+
+.footer-socials img {
+    width: 30px;
+    height: 26px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.view-all {
+    display: card-container;
+    justify-items: end;
+    margin: auto;
+    margin-right: 1vh;
+}
+
+/* Apps alanı */
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.apps p {
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+.apps img {
+    width: 120px;
+    height: auto;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.section-header {
+    display: flex;
+}
+
+
+.section-header a {
+    margin-top: 35px
+}
+
+
+@media(max-width: 900px){
+    header{
+        position: relative;
+    }
+
+    header nav{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    section{
+        padding: 1rem;
+    }
+
+    .suggestion-content {
+        flex-wrap: wrap;
+    }
+
+    .suggestion-content .item {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-helps {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+}
+
+
 
